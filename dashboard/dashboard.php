@@ -23,9 +23,9 @@ if(!$userId){
         <h2>Dashboard</h2>
       </div>
       <div>
-        <a href="#">My Dishes</a>
-        <a href="#">Publish Dish</a>
-        <a href="#">Orders</a>
+        <a href="dashboard.php?action=READ">My Dishes</a>
+        <a href="dashboard.php?action=CREATE">Publish Dish</a>
+        <a href="dashboard.php?action=ORDERS">Orders</a>
       </div>
     </aside>
     <section class="my-dishes">
@@ -185,9 +185,9 @@ if(!$userId){
       ?>
      
       <?php
-
+        if($_SERVER['REQUEST_METHOD'] == "GET" && $_GET['action'] == 'ORDERS'){
           echo "
-          
+            
             <h2>Orders</h2>
             <table border='1px' >
               <thead>
@@ -206,9 +206,9 @@ if(!$userId){
               </thead>
               <tbody>
           ";
-         $query = "SELECT * FROM orders WHERE userID = $userId";
-         $results = $conn->query($query);
-         while($row = $results->fetch_assoc()){
+        $query = "SELECT * FROM orders WHERE userID = $userId";
+        $results = $conn->query($query);
+        while($row = $results->fetch_assoc()){
             echo "
               <tr>
                 <td><img src='{$row['image']}' alt='Logo' width='80px' height='80px'></td>
@@ -219,12 +219,14 @@ if(!$userId){
                 <td><button>Completed</button></td>
               </tr>
             ";
-         }
-         echo "
+        }
+        echo "
                 </tbody>
             </table>
 
-         ";
+        ";
+        }
+         
         
         ?>
     </section>
