@@ -1,0 +1,163 @@
+*{
+    font-family: "Parkinsans", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1230px;
+    margin: 0 auto;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    background-color: white;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 0;
+
+}
+header nav .logo-block{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 23px;
+    font-weight: 200;
+    letter-spacing: 2px;
+}
+header nav .nav-links{
+    display: flex;
+    gap: 15px;
+}
+header nav .nav-links a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    transition: ease .3s;
+    margin-right: 59px;
+
+}
+.nav-links a:hover{
+    color: #1F4529;
+}
+.icons-link{
+    display: flex;
+    gap: 15px;
+}
+.icons-link button{
+    background: transparent;
+    outline: none;
+    border: none;
+    background-color: #1F4529;
+    color: white;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    transition: ease-in .2s;
+    cursor: pointer;
+}
+.icons-link button:hover{
+    border: solid 1px #1F4529;
+    background-color: transparent;
+    color: #47663B;
+}
+
+
+header nav:nth-child(2){
+    display: none;
+}
+
+section{
+    margin-top: 23px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    width: 550px;
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 59px 0;
+}
+section h2{
+    font-size: 44px;
+    color: #1F4529;
+}
+section p{
+    color: #47663B;
+
+}
+
+.animation-img{
+    animation: rotation-img 2s infinite ; 
+}
+
+@keyframes rotation-img {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 44px 0;
+}
+footer ul li{
+    list-style: none;
+    padding: 0 5px;
+}
+.footer-icons{
+    display: flex;
+    gap: 24px;
+    font-size: 33px;
+    margin-top: 13px;
+    padding: 0 5px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    header nav:nth-child(1){
+        display: none;
+    }
+    header nav:nth-child(2){
+        display: flex;
+        padding: 8px 15px;
+
+    }
+    header nav:nth-child(2) button{
+        background-color: #1F4529;
+        color: white;
+        border: none;
+        outline: none;
+        padding: 13px;
+        font-size: 19px;
+    }
+    
+    footer{
+        flex-direction: column;
+        padding: 0 13px;
+    }
+    
+    
+}

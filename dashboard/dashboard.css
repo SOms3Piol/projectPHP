@@ -1,0 +1,130 @@
+*{
+    font-family: "Parkinsans", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    display: flex;
+}
+
+aside{
+    width: fit-content;
+    height: 100vh;
+    border-right: solid 1px black;
+    padding: 23px;
+    display: flex;
+    flex-direction:column ;
+    gap: 33px;
+}
+aside div:nth-child(1){
+    display: flex;
+    align-items: center;
+}
+aside a{
+    display: block;
+    margin-top: 13px;
+    padding: 8px 23px;
+    text-decoration: none;
+    color: #47663B;
+    transition: ease-in-out .3s;
+}
+aside a:hover{
+    color: white;
+    background-color: #47663B;
+}
+section {
+    width: 100%;
+    padding: 23px 8px;
+}
+section h2{
+    font-size: 43px;
+    color: #47663B;
+}
+
+.dish-card{
+    display: flex;
+    gap: 33px;
+    align-items: start;
+    box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.267);
+    align-items: center;
+    padding: 8px 13px;
+    border-radius: 5px;
+    margin-top: 63px;
+}
+.dish-card img{
+    border-radius: 50%;
+    height: 90px;
+}
+.dish-card .text-part button:nth-child(1){
+    background-color: #47663B;
+    color: white;
+    padding: 8px 33px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.dish-card .text-part button:nth-child(2){
+    background-color: #FF2929;
+    color: white;
+    padding: 8px 33px;
+    font-size: 16px;
+    border: none;
+    outline: none;  
+    cursor: pointer;
+}
+
+.img-input{
+    position: relative;
+}
+.img-input label{
+    position: absolute;
+    background-color: white;
+    cursor: pointer;
+}
+.edit-form{
+    margin-top: 43px;
+    display: flex;
+}
+.edit-form input{
+    display: block;
+    margin: 13px 0;
+    padding: 13px 8px;
+    width: 100%;
+}
+.edit-form div:nth-child(2){
+    width: 100%;
+}
+.edit-form button{
+    background-color: #47663B;
+    color: white;
+    border:none;
+    outline: none;
+    cursor: pointer;
+    padding: 8px 33px;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+td{
+    padding: 8px 23px;
+}
+.pending{
+    padding: 7px 13px;
+    background-color: #ff29299a;
+    color: white;
+    border-radius: 8px;
+}
+td button{
+    background-color: transparent;
+    border:solid 1px #47663B;
+    outline: none;
+    color: #47663B;
+    padding: 7px 13px;
+    cursor: pointer;
+}

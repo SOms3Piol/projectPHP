@@ -1,0 +1,343 @@
+*{
+    font-family: "Parkinsans", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1230px;
+    margin: 0 auto;
+}
+
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 0;
+
+}
+header nav .logo-block{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 23px;
+    font-weight: 200;
+    letter-spacing: 2px;
+}
+header nav .nav-links{
+    display: flex;
+    gap: 15px;
+}
+header nav .nav-links a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    transition: ease .3s;
+    margin-right: 59px;
+
+}
+.nav-links a:hover{
+    color: #1F4529;
+}
+.icons-link{
+    display: flex;
+    gap: 15px;
+}
+.icons-link button{
+    background: transparent;
+    outline: none;
+    border: none;
+    background-color: #1F4529;
+    color: white;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    transition: ease-in .2s;
+    cursor: pointer;
+}
+.icons-link button:hover{
+    border: solid 1px #1F4529;
+    background-color: transparent;
+    color: #47663B;
+}
+
+
+
+.banner{
+    position: relative;
+    background-image: url('assests/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100vw;
+}
+
+.banner-text-block{
+    max-width: 560px;
+    font-size: 23px;
+    padding: 30px 23px;
+    position: relative;
+    z-index: 1;
+}
+.banner-text-block h1{
+    color: #47663B;
+    font-size: 50px;
+}
+.banner-text-block p{
+    font-size: medium;
+    color: rgba(255, 255, 255, 0.452);
+    margin-top: 13px;
+}
+.banner-text-block input{
+    width: 100%;
+    padding: 13px 23px;
+    border-radius: 23px;
+    border: solid 2px transparent;
+    outline: none;
+    margin-top: 34px;
+}
+.banner-text-block input:focus{
+    border: solid 2px #1F4529;
+
+}
+.input-group{
+    position: relative;
+}
+.input-group button{
+    color: #47663B;
+    position: absolute;
+    right: 13px;
+    top: 42px;
+    background-color: transparent;
+    border: none;
+    font-size: 23px;
+    cursor: pointer;
+}
+.btn-banner button{
+    background-color: #1F4529;
+    color: white;
+    padding: 14px 33px;
+    margin: 14px 10px;
+    border-radius: 15px;
+    outline: none;
+    border: #1F4529;
+    font-size: large;
+    transition: ease-in-out .2s;
+    cursor: pointer;
+}
+.btn-banner button:hover{
+    background-color: #47663B;
+}
+.shadow{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.445);
+    height: 100%;
+    width: 100%;
+    top: 0;
+}
+
+
+
+.about-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 15px 33px;
+    margin-top: 120px;
+    gap: 23px;
+}
+.card{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.card img{
+    width: 75px;
+    height: 75px;
+}
+.card p{
+    color: slategray;
+    line-height: 33px;
+}
+
+.dishes-section .section-head{
+    text-align: center;
+    padding: 55px 0;
+    margin: 43px 0;
+}
+.dishes-section .section-head p{
+    color: slategray;
+    margin-top: 13px;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    padding: 55px 43px;
+    gap: 34px;
+    background-color: #d9eafd83 ;
+    place-content: center;
+}
+.dish-card{
+    display: flex;
+    flex-direction: column;
+    gap: 63px;
+    padding: 18px 13px;
+    border-radius: 13px;
+    position: relative;
+    box-shadow:  0 0 10px 1px rgba(0, 0, 0, 0.411);
+    background-color: white;
+}
+.dish-card .head-part span{
+    margin-right: 5px;   
+}
+.head-part span:nth-child(2){
+    color: yellow;
+}
+.dish-card .head-part img{
+    border-radius: 50%;
+    box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.39);
+    position: absolute;
+    top: -10px;
+    right: 0;
+}
+.dish-card .text-part {
+    margin-top: 33px;
+}
+.dish-card .text-part div{
+    margin-top: 13px;
+    display: flex;
+    justify-content: space-between;
+}
+.dish-card .text-part div > button{
+    padding: 8px 16px;
+    border: solid 1px #1F4529;
+    outline: none;
+    background-color: transparent;
+    color: #47663B;
+    border-radius: 9px;
+    cursor: pointer;
+}
+.menu-link{
+    text-align: center;
+    margin-top: 23px;
+}
+.menu-link a{
+    text-decoration: none;
+    background-color: #1F4529;
+    padding: 8px 19px;
+    border: none;
+    color: white;
+}
+
+.subsciption-block{
+    position: relative;
+    background-image: url('assests/subsBanner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-top: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subs-text{
+    position: relative;
+    z-index: 5;
+    color: white;
+    width: 550px;
+}
+.subs-text h2{
+    font-size: 33px;
+}
+.subs-input {
+    position: relative;
+}
+.subs-input input{
+    border-radius: 15px;
+    border: solid 2px #1F4529;
+    padding: 13px 23px;
+    outline: none;
+    width: 100%;
+}
+.subs-input button{
+    position: absolute;
+    right: 13px;
+    top: 12%;
+    background-color: #1F4529;
+    color: white;
+    padding: 10px 23px;   
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 44px 0;
+}
+footer ul li{
+    list-style: none;
+    padding: 0 5px;
+}
+.footer-icons{
+    display: flex;
+    gap: 24px;
+    font-size: 33px;
+    margin-top: 13px;
+    padding: 0 5px;
+}
+
+header nav:nth-child(2){
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    header nav:nth-child(1){
+        display: none;
+    }
+    header nav:nth-child(2){
+        display: flex;
+        padding: 8px 15px;
+
+    }
+    header nav:nth-child(2) button{
+        background-color: #1F4529;
+        color: white;
+        border: none;
+        outline: none;
+        padding: 13px;
+        font-size: 19px;
+    }
+    .about-cards{
+        grid-template-columns: 1fr;
+    }
+    .grid-container{
+        grid-template-columns: 1fr 1fr;
+    }
+    .subsciption-block{
+        background-size: cover;
+        background-position: center;
+        border-radius: 0;
+    }
+    .subs-text{
+        padding: 0 13px;
+        font-size: 11px;
+    }
+    footer{
+        flex-direction: column;
+        padding: 0 13px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .grid-container{
+        grid-template-columns: 1fr;
+    }
+}

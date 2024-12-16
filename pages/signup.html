@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Sign Up| Cuisine</title>
+</head>
+<body>
+      <form action="../actions/signup.php" method="post">
+         <div>
+            <img src="../assests/logo.webp" alt="company logo on login page" width="100px" height="100px" style="border-radius: 50%;">
+            <div>
+                <h2>Sign Up</h2>
+                <p>The Best Fast food deleviry Service</p>
+            </div>
+        </div>
+        <input type="email" placeholder="Email" required >
+        <input id='pass' type="password" placeholder="Password" required>
+        <input id='cpass' type="password" placeholder="Confirm Password" required>
+        <div>
+            <button type="submit">Login</button>
+        </div>
+      </form>
+
+    <script>
+      const pass = document.getElemetById('pass');
+      const cpass = document.getElemetById('cpass');
+
+      function Validate(){
+        if(pass.value != cpass.value){
+          alert("Password Must Be Match");
+        }
+      }
+    </script>
+</body>
+</html>
