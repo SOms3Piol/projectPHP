@@ -1,5 +1,7 @@
 <?php
-    include("../connection.php");
+   if(isset($_POST['login']){
+
+         include("../connection.php");
 
     // Get email and password from POST
     $email = $_POST['email'];
@@ -40,5 +42,6 @@
         // Email not found
         echo "Email or Password Invalid!";
         return;
+    }      
     }
 ?>
