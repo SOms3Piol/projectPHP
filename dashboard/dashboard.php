@@ -184,51 +184,6 @@ if(!$userId){
       
       ?>
      
-      <?php
-        if($_SERVER['REQUEST_METHOD'] == "GET" && $_GET['action'] == 'ORDERS'){
-          echo "
-            
-            <h2>Orders</h2>
-            <table border='1px' >
-              <thead>
-                <th>
-                <tr>
-                  <td></td>
-                  <td>Name</td>
-                  <td>Quantity</td>
-                  <td>Price</td>
-                  <td>Status</td>
-                  <td>
-                    Placed
-                  </td>
-                </tr>
-                </th>
-              </thead>
-              <tbody>
-          ";
-        $query = "SELECT * FROM orders WHERE userID = $userId";
-        $results = $conn->query($query);
-        while($row = $results->fetch_assoc()){
-            echo "
-              <tr>
-                <td><img src='{$row['image']}' alt='Logo' width='80px' height='80px'></td>
-                <td>{$row['title']}</td>
-                <td>{$row['quantity']}</td>
-                <td>{$row['price']}$</td>
-                <td ><span class='pending'>{$row['status']}...</span></td>
-                <td><button>Completed</button></td>
-              </tr>
-            ";
-        }
-        echo "
-                </tbody>
-            </table>
-
-        ";
-        }
-         
-        
-        ?>
     </section>
   </body>
 </html>
